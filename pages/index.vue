@@ -169,6 +169,42 @@
       <part-title icon="why" title-first="Why" title-second="Us" />
       <div class="bg-img"><img src="@/assets/images/icons/why.svg"></div>
 
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-6 col-center">
+
+            <div id="why-items">
+
+              <div class="item">
+                <div class="title">Technical Consultancy</div>
+                <p>Chartered Engineers and other experts are available to advise on technical and scientific issues</p>
+              </div>
+
+              <div class="item">
+                <div class="title">Impartiality</div>
+                <p>Chartered Engineers and other experts are available to advise on technical and scientific issues</p>
+              </div>
+
+              <div class="item">
+                <div class="title">Worldwide Network</div>
+                <p>Chartered Engineers and other experts are available to advise on technical and scientific issues</p>
+              </div>
+
+              <div class="item">
+                <div class="title">The Fee Scale</div>
+                <p>Chartered Engineers and other experts are available to advise on technical and scientific issues</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
 
     <section class="container">
@@ -251,5 +287,58 @@
     box-shadow: 0 4px 15px 0 rgba(#000, 0.1);
     border-radius: 8px;
     padding: 20px;
+  }
+
+  // Why items
+  #why-items{
+    .item{
+      position: relative;
+      padding-left: 30px;
+      display: inline-flex;
+      width: 100%;
+      flex-direction: column;
+
+      &:before{
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: #aaaaaa;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+      }
+      &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 7px;
+        z-index: 5;
+        border-left: 1px dashed #aaa;
+        width: 1px;
+        height: 100%;
+      }
+
+      &:last-child:after{
+        display: none;
+      }
+
+      .title{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 20px;
+        color: #147b89;
+        margin-bottom: 15px;
+        margin-top: -5px;
+      }
+      p{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 14px;
+        color: #747474;
+        line-height: 18px;
+        padding-bottom: 40px;
+        margin: 0;
+      }
+    }
   }
 </style>
