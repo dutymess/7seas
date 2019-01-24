@@ -2,12 +2,22 @@
 
   <div>
 
+    <!-- Slide -->
     <div id="slide">
       <img src="@/assets/images/slide.jpg" class="slide">
       <img src="@/assets/images/slide-clip.svg" class="clip">
     </div>
 
+    <!-- Services -->
+    <section id="services">
+
+      <part-title icon="services" title-first="Our" title-second="Services" />
+
+
+    </section>
+
     <section class="container">
+
 
     </section>
 
@@ -16,8 +26,13 @@
 </template>
 
 <script>
+
+  import PartTitle from '@/components/PartTitle'
+
   export default {
-    components: {}
+    components: {
+      PartTitle
+    }
   }
 </script>
 
