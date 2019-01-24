@@ -41,11 +41,6 @@
     padding: 0;
     margin: 0;
   }
-  .container{
-    width: 100%;
-    max-width: 1170px;
-    margin: 0 auto;
-  }
   header{
     background-image: linear-gradient(-135deg, rgba(39,146,167,0.60) 0%, rgba(17,47,110,0.60) 100%);
     padding-bottom: 30px;

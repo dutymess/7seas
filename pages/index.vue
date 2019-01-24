@@ -12,8 +12,50 @@
     <section id="services">
 
       <part-title icon="services" title-first="Our" title-second="Services" />
-
       <div class="bg-img"><img src="@/assets/images/icons/services.svg"></div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <service img="service-1"
+                     title="Marine Services"
+                     desc="Ship Registration - Classification - Sale & Purchase - Cargo, Hull and P&I Insurance Brokers"
+            />
+          </div>
+          <div class="col">
+            <service img="service-1"
+                     title="Emergencies"
+                     desc="Worldwide Problem Solving - Emergency Team - Ready To Travel 24/7"
+            />
+          </div>
+          <div class="col">
+            <service img="service-1"
+                     title="Surveys"
+                     desc="Marine - Cargo - Loss Prevention"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <service img="service-1"
+                     title="Average Adjusting"
+                     desc="Hull & Machinery - Cargo - General Average"
+            />
+          </div>
+          <div class="col">
+            <service img="service-1"
+                     title="Recoveries"
+                     desc="Under subrogation or below deductible - On behalf of transport players"
+            />
+          </div>
+          <div class="col">
+            <service img="service-1"
+                     title="Claims Management"
+                     desc="Global policies cargo - Charterers liability - Arbitrations - Charter party disputes - Fraud investigations"
+            />
+          </div>
+        </div>
+      </div>
 
     </section>
 
@@ -47,10 +89,12 @@
 <script>
 
   import PartTitle from '@/components/PartTitle'
+  import Service from '@/components/Service'
 
   export default {
     components: {
-      PartTitle
+      PartTitle,
+      Service
     }
   }
 </script>
@@ -84,12 +128,13 @@
     min-height: 100vh;
     position: relative;
     overflow: hidden;
+    padding-bottom: 60px;
 
     .bg-img{
       position: absolute;
       top: 200px;
       left: -230px;
-      z-index: 0;
+      z-index: -10;
       opacity: 0.2;
 
       img{
@@ -101,5 +146,14 @@
 
   section#offices{
     background: #f9fbfb;
+  }
+
+  // Panel
+  .panel{
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    box-shadow: 0 4px 15px 0 rgba(#000, 0.1);
+    border-radius: 8px;
+    padding: 20px;
   }
 </style>
