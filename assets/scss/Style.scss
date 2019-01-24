@@ -6,6 +6,18 @@
 //------------------------------------------------
 $global-color: #147b89;
 
+// Reset
+//------------------------------------------------
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 // Grid
 //------------------------------------------------
 .container {
@@ -88,7 +100,10 @@ $global-color: #147b89;
 .col-auto,
 [class*=col-] {
   -webkit-box-flex: 0;
-  max-width: 100%
+  max-width: 100%;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
 }
 
 [class*=col-] {

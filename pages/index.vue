@@ -63,8 +63,103 @@
     <section id="offices">
 
       <part-title icon="offices" title-first="Our" title-second="Offices" />
-
       <div class="bg-img"><img src="@/assets/images/icons/offices.svg"></div>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col">
+            <office img="cyprus"
+                    title="Limassol, Cyprus"
+                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
+                    email="limassol@7seas.bg"
+            />
+          </div>
+          <div class="col">
+            <office img="cyprus"
+                    title="Limassol, Cyprus"
+                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
+                    email="limassol@7seas.bg"
+            />
+          </div>
+          <div class="col">
+            <office img="cyprus"
+                    title="Istanbul, Turkey"
+                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
+                    email="limassol@7seas.bg"
+            />
+          </div>
+        </div>
+
+      </div>
+
+      <part-title title-first="Lloyd’s" title-second="Agent in" />
+      <div class="container">
+
+        <div class="row">
+          <div class="col">
+            <office img="cyprus"
+                    title="Limassol, Cyprus"
+                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
+                    email="limassol@7seas.bg"
+            />
+          </div>
+          <div class="col">
+            <office img="cyprus"
+                    title="Limassol, Cyprus"
+                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
+                    email="limassol@7seas.bg"
+            />
+          </div>
+          <div class="col">
+            <office img="cyprus"
+                    title="Istanbul, Turkey"
+                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
+                    email="limassol@7seas.bg"
+            />
+          </div>
+        </div>
+
+      </div>
+
+      <part-title title-first="Other" title-second="Offices" />
+      <div class="container">
+
+        <div class="row">
+          <div class="col">
+            <office img="cyprus"
+                    title="Limassol, Cyprus"
+                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
+                    email="limassol@7seas.bg"
+            />
+          </div>
+          <div class="col">
+            <office img="cyprus"
+                    title="Limassol, Cyprus"
+                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
+                    email="limassol@7seas.bg"
+            />
+          </div>
+          <div class="col">
+            <office img="cyprus"
+                    title="Istanbul, Turkey"
+                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
+                    email="limassol@7seas.bg"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <office img="cyprus"
+                    title="Limassol, Cyprus"
+                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
+                    email="limassol@7seas.bg"
+            />
+          </div>
+        </div>
+
+      </div>
 
     </section>
 
@@ -72,7 +167,6 @@
     <section id="why">
 
       <part-title icon="why" title-first="Why" title-second="Us" />
-
       <div class="bg-img"><img src="@/assets/images/icons/why.svg"></div>
 
     </section>
@@ -90,11 +184,13 @@
 
   import PartTitle from '@/components/PartTitle'
   import Service from '@/components/Service'
+  import Office from '@/components/Office'
 
   export default {
     components: {
       PartTitle,
-      Service
+      Service,
+      Office
     }
   }
 </script>
