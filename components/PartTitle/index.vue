@@ -5,6 +5,7 @@
       <span class="first" v-if="titleFirst">{{ titleFirst }}</span>
       <span class="second" v-if="titleSecond">{{ titleSecond }}</span>
     </div>
+    <div class="line"></div>
   </div>
 </template>
 
@@ -53,6 +54,13 @@
     .second{
       color: #147b89;
     }
+  }
+  .line{
+    margin-top: 25px;
+    display: inline-flex;
+    width: 50px;
+    height: 5px;
+    background: #147b89;
   }
 }
 </style>

@@ -13,6 +13,25 @@
 
       <part-title icon="services" title-first="Our" title-second="Services" />
 
+      <div class="bg-img"><img src="@/assets/images/icons/services.svg"></div>
+
+    </section>
+
+    <!-- Offices -->
+    <section id="offices">
+
+      <part-title icon="offices" title-first="Our" title-second="Offices" />
+
+      <div class="bg-img"><img src="@/assets/images/icons/offices.svg"></div>
+
+    </section>
+
+    <!-- Why Us -->
+    <section id="why">
+
+      <part-title icon="why" title-first="Why" title-second="Us" />
+
+      <div class="bg-img"><img src="@/assets/images/icons/why.svg"></div>
 
     </section>
 
@@ -58,5 +77,29 @@
       transform: translateX(-50%);
       z-index: 50;
     }
+  }
+
+  // Section
+  section{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    .bg-img{
+      position: absolute;
+      top: 200px;
+      left: -230px;
+      z-index: 0;
+      opacity: 0.2;
+
+      img{
+        width: 640px;
+        height: auto;
+      }
+    }
+  }
+
+  section#offices{
+    background: #f9fbfb;
   }
 </style>
