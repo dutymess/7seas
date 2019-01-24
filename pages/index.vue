@@ -297,15 +297,6 @@
     background: #f9fbfb;
   }
 
-  // Panel
-  .panel{
-    background: #FFFFFF;
-    border: 1px solid #E7E7E7;
-    box-shadow: 0 4px 15px 0 rgba(#000, 0.1);
-    border-radius: 8px;
-    padding: 20px;
-  }
-
   // Why items
   #why-items{
     .item{
