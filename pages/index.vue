@@ -207,10 +207,27 @@
 
     </section>
 
-    <section class="container">
+    <!-- LLoyde's -->
+    <div id="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <img src="@/assets/images/lloyds.jpg" width="160" alt="Lloyd's Agent in D.R. of the Congo, Angola and Morocco">
+          </div>
+          <div class="col-9">
 
+            <h1>Lloyd's Agent in D.R. of the Congo, Angola and Morocco</h1>
 
-    </section>
+            <h2>Angola</h2>
+            <p>The leading Marine Surveyors and Average Adjusting Company of Angola Luanda - Lobito - Namibe - Soyo - Cabinda</p>
+
+            <h2>Democratic Republic of the Congo & Morocco</h2>
+            <p>Our Team of Master Mariners and experienced surveyors is availableto attend all over D.R.C. and Morocco</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 
@@ -339,6 +356,34 @@
         padding-bottom: 40px;
         margin: 0;
       }
+    }
+  }
+
+  // Banner
+  //------------------------------------------------
+  #banner{
+    background-image: linear-gradient(-135deg, #2792A7 0%, #112F6E 100%);
+    padding: 80px;
+
+    h1{
+      font-family: 'IBM Plex Sans Condensed', sans-serif;
+      font-size: 32px;
+      font-weight: bold;
+      margin: 0 0 30px;
+      color: #ffffff;
+    }
+    h2{
+      font-family: 'IBM Plex Sans Condensed', sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0 0 10px;
+      color: #ffffff;
+    }
+    p{
+      font-family: 'IBM Plex Sans Condensed', sans-serif;
+      font-size: 14px;
+      margin: 0 0 30px;
+      color: #ffffff;
     }
   }
 </style>

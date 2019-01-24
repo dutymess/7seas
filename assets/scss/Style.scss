@@ -27,15 +27,6 @@ html {
   padding-left: 15px
 }
 
-.container:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0
-}
-
 @media (min-width: 768px) {
   .container {
     width: 750px

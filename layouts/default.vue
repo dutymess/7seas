@@ -2,7 +2,7 @@
   <div>
 
     <header>
-      <div class="container">
+      <div class="container justify-content-between">
         <a href="#" id="logo">
           <img src="@/assets/images/logo.svg" width="250">
         </a>
@@ -29,6 +29,14 @@
     </div>
 
     <nuxt/>
+
+    <footer>
+      <a href="#" id="logo-footer">
+        <img src="@/assets/images/logo-footer.svg" width="250">
+      </a>
+      <div class="copyright">All rights reserved. 2019</div>
+    </footer>
+
   </div>
 </template>
 
@@ -97,6 +105,21 @@
           }
         }
       }
+    }
+  }
+
+  // Footer
+  footer{
+    text-align: center;
+    padding: 70px 0 40px;
+    background: #fafafa;
+    border-top: 1px solid #fafafa;
+
+    .copyright{
+      margin-top: 70px;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-size: 12px;
+      color: #aaaaaa;
     }
   }
 </style>
