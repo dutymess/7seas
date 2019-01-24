@@ -113,7 +113,7 @@
     text-align: center;
     padding: 70px 0 40px;
     background: #fafafa;
-    border-top: 1px solid #fafafa;
+    border-top: 1px solid #DEDEDE;
 
     .copyright{
       margin-top: 70px;
