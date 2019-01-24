@@ -74,6 +74,8 @@
     box-shadow: 0 4px 15px 0 rgba(0,0,0,0.10);
     border-radius: 8px;
     margin-top: -32px;
+    position: relative;
+    z-index: 200;
 
     ul{
       list-style: none;
