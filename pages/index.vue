@@ -15,46 +15,16 @@
       <div class="bg-img"><img src="@/assets/images/icons/services.svg"></div>
 
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <service img="service-1"
-                     title="Marine Services"
-                     desc="Ship Registration - Classification - Sale & Purchase - Cargo, Hull and P&I Insurance Brokers"
-            />
-          </div>
-          <div class="col">
-            <service img="service-1"
-                     title="Emergencies"
-                     desc="Worldwide Problem Solving - Emergency Team - Ready To Travel 24/7"
-            />
-          </div>
-          <div class="col">
-            <service img="service-1"
-                     title="Surveys"
-                     desc="Marine - Cargo - Loss Prevention"
+
+        <div class="row" v-for="i in Math.ceil(Configs.Services.length / 3)">
+          <div class="col-4" v-for="service in Configs.Services.slice((i - 1) * 3, i * 3)">
+            <service :img="service.img"
+                     :title="service.title"
+                     :desc="service.desc"
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <service img="service-1"
-                     title="Average Adjusting"
-                     desc="Hull & Machinery - Cargo - General Average"
-            />
-          </div>
-          <div class="col">
-            <service img="service-1"
-                     title="Recoveries"
-                     desc="Under subrogation or below deductible - On behalf of transport players"
-            />
-          </div>
-          <div class="col">
-            <service img="service-1"
-                     title="Claims Management"
-                     desc="Global policies cargo - Charterers liability - Arbitrations - Charter party disputes - Fraud investigations"
-            />
-          </div>
-        </div>
+
       </div>
 
     </section>
@@ -65,100 +35,45 @@
       <part-title icon="offices" title-first="Our" title-second="Offices" />
       <div class="bg-img"><img src="@/assets/images/icons/offices.svg"></div>
 
+      <!-- Main offices -->
       <div class="container">
-
-        <div class="row">
-          <div class="col">
-            <office img="cyprus"
-                    title="Limassol, Cyprus"
-                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
-                    email="limassol@7seas.bg"
-            />
-          </div>
-          <div class="col">
-            <office img="cyprus"
-                    title="Limassol, Cyprus"
-                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
-                    email="limassol@7seas.bg"
-            />
-          </div>
-          <div class="col">
-            <office img="cyprus"
-                    title="Istanbul, Turkey"
-                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
-                    email="limassol@7seas.bg"
+        <div class="row" v-for="i in Math.ceil(Configs.Offices.main.length / 3)">
+          <div class="col-4" v-for="office in Configs.Offices.main.slice((i - 1) * 3, i * 3)">
+            <office :img="office.img"
+                    :title="office.title"
+                    :desc="office.desc"
+                    :email="office.email"
             />
           </div>
         </div>
-
       </div>
 
+      <!-- Lloyd's -->
       <part-title title-first="Lloyd’s" title-second="Agent in" />
       <div class="container">
-
-        <div class="row">
-          <div class="col">
-            <office img="cyprus"
-                    title="Limassol, Cyprus"
-                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
-                    email="limassol@7seas.bg"
-            />
-          </div>
-          <div class="col">
-            <office img="cyprus"
-                    title="Limassol, Cyprus"
-                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
-                    email="limassol@7seas.bg"
-            />
-          </div>
-          <div class="col">
-            <office img="cyprus"
-                    title="Istanbul, Turkey"
-                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
-                    email="limassol@7seas.bg"
+        <div class="row" v-for="i in Math.ceil(Configs.Offices.lloyds.length / 3)">
+          <div class="col-4" v-for="office in Configs.Offices.lloyds.slice((i - 1) * 3, i * 3)">
+            <office :img="office.img"
+                    :title="office.title"
+                    :desc="office.desc"
+                    :email="office.email"
             />
           </div>
         </div>
-
       </div>
 
+      <!-- Others -->
       <part-title title-first="Other" title-second="Offices" />
       <div class="container">
-
-        <div class="row">
-          <div class="col">
-            <office img="cyprus"
-                    title="Limassol, Cyprus"
-                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
-                    email="limassol@7seas.bg"
-            />
-          </div>
-          <div class="col">
-            <office img="cyprus"
-                    title="Limassol, Cyprus"
-                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
-                    email="limassol@7seas.bg"
-            />
-          </div>
-          <div class="col">
-            <office img="cyprus"
-                    title="Istanbul, Turkey"
-                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
-                    email="limassol@7seas.bg"
+        <div class="row" v-for="i in Math.ceil(Configs.Offices.others.length / 3)">
+          <div class="col-4" v-for="office in Configs.Offices.others.slice((i - 1) * 3, i * 3)">
+            <office :img="office.img"
+                    :title="office.title"
+                    :desc="office.desc"
+                    :email="office.email"
             />
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-4">
-            <office img="cyprus"
-                    title="Limassol, Cyprus"
-                    desc="4 Alexandrias Street - 2nd Floor<br>3013 Limassol - Cyprus<br>Tel.: + 357 25 818 020<br>Fax: + 357 25 818 021"
-                    email="limassol@7seas.bg"
-            />
-          </div>
-        </div>
-
       </div>
 
     </section>
@@ -177,24 +92,9 @@
 
             <div id="why-items">
 
-              <div class="item">
-                <div class="title">Technical Consultancy</div>
-                <p>Chartered Engineers and other experts are available to advise on technical and scientific issues</p>
-              </div>
-
-              <div class="item">
-                <div class="title">Impartiality</div>
-                <p>Chartered Engineers and other experts are available to advise on technical and scientific issues</p>
-              </div>
-
-              <div class="item">
-                <div class="title">Worldwide Network</div>
-                <p>Chartered Engineers and other experts are available to advise on technical and scientific issues</p>
-              </div>
-
-              <div class="item">
-                <div class="title">The Fee Scale</div>
-                <p>Chartered Engineers and other experts are available to advise on technical and scientific issues</p>
+              <div class="item" v-for="reason in Configs.Reasons">
+                <div class="title" v-html="reason.title"></div>
+                <p v-html="reason.desc"></p>
               </div>
 
             </div>
@@ -240,11 +140,13 @@
   import Office from '@/components/Office'
 
   export default {
+
     components: {
       PartTitle,
       Service,
       Office
-    }
+    },
+
   }
 </script>
 
@@ -336,7 +238,7 @@
         font-family: 'IBM Plex Sans', sans-serif;
         font-size: 20px;
         color: #147b89;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         margin-top: -5px;
       }
       p{
