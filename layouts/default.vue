@@ -102,6 +102,11 @@
           color: #747474;
           text-decoration: none;
           padding: 24px 15px;
+
+          &.nuxt-link-exact-active{
+            color: #11597E;
+            background: #fafafa;
+          }
         }
 
         &:hover{
