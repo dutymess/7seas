@@ -18,11 +18,11 @@ export default {
     },
     {
       title: 'Hull',
-      to: '/page/hull',
+      to: '/hull',
     },
     {
       title: 'Cargo',
-      to: '/page/cargo',
+      to: '/cargo',
     },
     {
       title: 'Our Team',
@@ -30,32 +30,32 @@ export default {
     },
     {
       title: 'Our Clients',
-      to: '/page/clients',
+      to: '/clients',
     },
     {
       title: 'Africa',
       children: [
         {
           title: 'Angola',
-          to: '/page/angola',
+          to: '/angola',
         },
         {
           title: 'D.R. of the Congo',
-          to: '/page/congo',
+          to: '/congo',
         },
         {
           title: 'Morocco',
-          to: '/page/morocco',
+          to: '/morocco',
         },
       ]
     },
     {
       title: 'Indonesia',
-      to: '/page/indonesia',
+      to: '/indonesia',
     },
     {
       title: 'Terms and Conditions',
-      to: '/page/terms-and-conditions',
+      to: '/terms-and-conditions',
     },
 
   ]
