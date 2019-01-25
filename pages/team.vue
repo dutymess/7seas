@@ -12,16 +12,16 @@
       <div class="container">
 
         <!-- Head -->
-        <div class="row" v-for="i in Math.ceil(members_head.length / 2)">
-          <div class="col-6" v-for="member in members_head.slice((i - 1) * 2, i * 2)">
-            <team :name="member.name" :position="member.position" :desc="member.desc" />
+        <div class="row" v-for="i in Math.ceil(Configs.Team.main.length / 2)">
+          <div class="col-6" v-for="member in Configs.Team.main.slice((i - 1) * 2, i * 2)">
+            <team :name="member.name" :position="member.position ? member.position : null" :desc="member.desc" />
           </div>
         </div>
 
         <!-- Others -->
-        <div class="row" v-for="i in Math.ceil(members_others.length / 3)">
-          <div class="col-4" v-for="member in members_others.slice((i - 1) * 3, i * 3)">
-            <team :name="member.name" :position="member.position" :desc="member.desc" />
+        <div class="row" v-for="i in Math.ceil(Configs.Team.others.length / 3)">
+          <div class="col-4" v-for="member in Configs.Team.others.slice((i - 1) * 3, i * 3)">
+            <team :name="member.name" :position="member.position ? member.position : null" :desc="member.desc" />
           </div>
         </div>
 
