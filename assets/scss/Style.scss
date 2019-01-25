@@ -776,4 +776,26 @@ body{
       text-decoration: none;
     }
   }
+  ul{
+    padding-left: 20px;
+
+    li{
+      list-style: none;
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 15px;
+      color: #11597E;
+
+      &:before{
+        content: '';
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        background: #aaaaaa;
+        position: absolute;
+        top: 7px;
+        left: 0;
+      }
+    }
+  }
 }
