@@ -6,11 +6,7 @@
         <a href="#" id="logo">
           <img src="@/assets/images/logo.svg" width="250">
         </a>
-        <div class="desc">
-          Average adjusters - Marine serveyors - Claims and recovery agents
-          <br>
-          Transport lawers - Marnine consultants and brokers
-        </div>
+        <div class="desc" v-html="Configs.General.header_title"></div>
       </div>
     </header>
     <div class="container">
