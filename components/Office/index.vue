@@ -3,7 +3,7 @@
     <div class="img"><img :src="imgUrl" :alt="title" v-if="img"></div>
     <div class="title">{{ title }}</div>
     <p v-html="desc"></p>
-    <div class="email" v-if="email">Email: <a :href="email">{{ email }}</a></div>
+    <div class="email" v-if="email">Email: <a :href="'mailto:'+email">{{ email }}</a></div>
   </div>
 </template>
 
@@ -47,6 +47,7 @@
     }
     img{
       max-width: 160px;
+      max-height: 120px;
       width: 100%;
       height: auto;
       vertical-align: middle;
