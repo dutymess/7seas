@@ -12,14 +12,18 @@
     <div class="container">
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Hull</a></li>
-          <li><a href="#">Cargo</a></li>
-          <li><a href="#">Our Team</a></li>
-          <li><a href="#">Our Clients</a></li>
-          <li><a href="#">Africa</a></li>
-          <li><a href="#">Indonesia</a></li>
-          <li><a href="#">Terms and Conditions</a></li>
+          <li v-for="item in Configs.General.menu">
+
+            <nuxt-link v-if="item.to" :to="item.to">{{ item.title }}</nuxt-link>
+            <a href="#" @click.prevent v-else>{{ item.title }}</a>
+
+            <ul v-if="item.children">
+              <li v-for="child in item.children">
+                <nuxt-link :to="child.to">{{ child.title }}</nuxt-link>
+              </li>
+            </ul>
+
+          </li>
         </ul>
       </nav>
     </div>
