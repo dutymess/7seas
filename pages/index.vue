@@ -171,6 +171,11 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 50;
+
+      @media (max-width: 767px) {
+        height: auto;
+        bottom: -1px;
+      }
     }
   }
 
@@ -257,6 +262,14 @@
   #banner{
     background-image: linear-gradient(-135deg, #2792A7 0%, #112F6E 100%);
     padding: 80px;
+
+    @media (max-width: 767px) {
+      padding: 20px;
+
+      img{
+        margin-bottom: 20px;
+      }
+    }
 
     h1{
       font-family: 'IBM Plex Sans Condensed', sans-serif;

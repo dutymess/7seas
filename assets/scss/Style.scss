@@ -488,6 +488,17 @@ body{
   margin: 0 auto;
 }
 
+@media (max-width: 767px) {
+  .col,
+  [class*=" col-"],
+  [class^=col-] {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%
+  }
+}
+
 .row.xs {
   margin-right: 0;
   margin-left: 0
@@ -743,6 +754,15 @@ body{
     height: 100%;
     object-fit: cover;
   }
+
+  @media (max-width: 767px) {
+    height: 160px;
+    margin-top: 0;
+
+    .title{
+      padding: 0;
+    }
+  }
 }
 
 // Panel
@@ -814,6 +834,9 @@ body{
   }
 }
 
+.d-f{
+  display: flex;
+}
 .ta-c{
   text-align: center;
 }

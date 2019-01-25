@@ -66,6 +66,18 @@
       font-size: 14px;
       color: #ffffff;
     }
+
+    @media (max-width: 767px) {
+      padding-top: 30px;
+
+      .container{
+        flex-direction: column;
+        height: auto;
+      }
+      .desc{
+        display: none;
+      }
+    }
   }
   nav{
     height: 64px;
@@ -79,6 +91,10 @@
     margin-top: -32px;
     position: relative;
     z-index: 200;
+
+    @media (max-width: 767px) {
+      margin-top: 0;
+    }
 
     ul{
       list-style: none;
