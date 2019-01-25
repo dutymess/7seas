@@ -89,19 +89,52 @@
       li{
         display: inline-block;
         list-style: none;
+        position: relative;
 
         a{
+          display: inline-flex;
           font-size: 14px;
           font-family: 'IBM Plex Sans', sans-serif;
           font-weight: bold;
           text-transform: uppercase;
-          margin: 0 15px;
+          margin: 0;
           line-height: 1;
           color: #747474;
           text-decoration: none;
+          padding: 24px 15px;
+        }
 
-          &:hover{
+        &:hover{
+          > a{
+            background: #fafafa;
             color: #11597E;
+          }
+          ul{
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+
+        ul{
+          padding: 5px 0;
+          opacity: 0;
+          visibility: hidden;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: #ffffff;
+          box-shadow: 0 4px 15px 0 rgba(0,0,0,0.10);
+          transition: all 0.3s ease;
+
+          li{
+            width: 100%;
+          }
+          a{
+            display: inline-flex;
+            width: 100%;
+            white-space: nowrap;
+            padding: 15px;
+            font-weight: normal;
           }
         }
       }
