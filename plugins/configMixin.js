@@ -8,6 +8,7 @@ import General from '@/config/general'
 import Services from '@/config/services'
 import Offices from '@/config/offices'
 import Reasons from '@/config/reasons'
+import Team from '@/config/team'
 
 Vue.mixin({
   data() {
@@ -16,7 +17,8 @@ Vue.mixin({
         General,
         Services,
         Offices,
-        Reasons
+        Reasons,
+        Team
       }
     }
   },
