@@ -797,5 +797,15 @@ body{
         left: 0;
       }
     }
+
+    ul{
+      margin-top: 15px;
+      margin-bottom: 25px;
+
+      li:before{
+        border: 2px solid #aaaaaa;
+        background-color: transparent;
+      }
+    }
   }
 }
