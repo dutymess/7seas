@@ -30,7 +30,7 @@
       <a href="#" id="logo-footer">
         <img src="@/assets/images/logo-footer.svg" width="250">
       </a>
-      <div class="copyright">All rights reserved. 2019</div>
+      <div class="copyright" v-html="Configs.General.copyright"></div>
     </footer>
 
   </div>
