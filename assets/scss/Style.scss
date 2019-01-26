@@ -27,7 +27,8 @@ body{
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
-  padding-left: 15px
+  padding-left: 15px;
+  max-width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -856,3 +857,4 @@ section, .team_members{
     margin-bottom: 30px;
   }
 }
+

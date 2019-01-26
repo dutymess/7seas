@@ -157,6 +157,7 @@
     position: relative;
     margin-top: -34px;
     z-index: 100;
+    overflow: hidden;
 
     img.slide{
       width: 100%;
@@ -165,6 +166,7 @@
     }
     img.clip{
       width: 100%;
+      min-width: 1440px;
       height: 75px;
       position: absolute;
       bottom: -1px;

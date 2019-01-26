@@ -3,14 +3,23 @@
 
     <header>
       <div class="container justify-content-between">
+
         <a href="#" id="logo">
           <img src="@/assets/images/logo.svg" width="250">
         </a>
+
+        <a href="#" id="menu-toggle" @click.prevent="menuToggle" :class="{active: menuActive}">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
         <div class="desc" v-html="Configs.General.header_title"></div>
+
       </div>
     </header>
-    <div class="container">
-      <nav>
+    <div class="container nav-container">
+      <nav :class="{toggled: menuActive}">
         <ul>
           <li v-for="item in Configs.General.menu">
 
@@ -39,6 +48,26 @@
 
   </div>
 </template>
+
+<script>
+  export default {
+
+    data(){
+      return {
+        menuActive: false
+      }
+    },
+
+    methods: {
+
+      menuToggle(){
+        this.menuActive = !this.menuActive;
+      }
+
+    }
+
+  }
+</script>
 
 <style lang="scss">
   html{
@@ -73,9 +102,15 @@
       .container{
         flex-direction: column;
         height: auto;
+        align-items: baseline;
       }
       .desc{
-        display: none;
+        margin-top: 20px;
+        font-size: 12px;
+
+        br{
+          display: none;
+        }
       }
     }
   }
@@ -91,10 +126,6 @@
     margin-top: -32px;
     position: relative;
     z-index: 200;
-
-    @media (max-width: 767px) {
-      margin-top: 0;
-    }
 
     ul{
       list-style: none;
@@ -157,6 +188,95 @@
             padding: 15px;
             font-weight: normal;
           }
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+      position: fixed;
+      height: auto;
+      top: 0;
+      bottom: 15px;
+      right: -100%;
+      width: calc(100% - 15px);
+      border-radius: 0 0 0 8px;
+      margin-top: 0;
+      align-items: baseline;
+      justify-content: end;
+      transition: all 0.3s ease;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 5000;
+    }
+
+    &.toggled{
+      right: 0;
+      opacity: 1;
+      visibility: visible;
+
+      ul{
+        li{
+          display: flex;
+          flex-direction: column;
+
+          a{
+            padding: 18px 14px;
+          }
+        }
+        ul{
+          opacity: 1;
+          visibility: visible;
+          position: static;
+          box-shadow: none;
+          background: none;
+          padding: 0 0 0 25px;
+
+          li{
+            a{
+              padding: 12px 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Menu toggle
+  a#menu-toggle{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 6000;
+
+    span{
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      background: #fff;
+      border-radius: 3px;
+      z-index: 1;
+      transform-origin: 4px 0px;
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+      &:nth-last-child(2) {
+        transform-origin: 0 100%;
+      }
+    }
+
+    &.active{
+      span {
+        opacity: 1;
+        transform: rotate(45deg) translate(2px, -1px);
+        background: #232323;
+
+        &:nth-last-child(2) {
+          opacity: 0;
+          transform: rotate(0deg) scale(0.2, 0.2);
+        }
+        &:nth-last-child(1){
+          transform: rotate(-45deg) translate(-1px, -1px);
         }
       }
     }
