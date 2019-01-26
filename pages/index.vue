@@ -167,14 +167,13 @@
       width: 100%;
       height: 75px;
       position: absolute;
-      bottom: 0;
+      bottom: -1px;
       left: 50%;
       transform: translateX(-50%);
       z-index: 50;
 
       @media (max-width: 767px) {
         height: auto;
-        bottom: -1px;
       }
     }
   }
@@ -202,6 +201,8 @@
 
   section#offices{
     background: #f9fbfb;
+
+
   }
 
   // Why items

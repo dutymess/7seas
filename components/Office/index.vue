@@ -35,7 +35,6 @@
 <style lang="scss" scoped>
   // Office
   .panel.office{
-    margin-bottom: 30px;
     text-align: center;
 
     .img{

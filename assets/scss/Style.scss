@@ -773,6 +773,7 @@ body{
   box-shadow: 0 4px 15px 0 rgba(#000, 0.1);
   border-radius: 8px;
   padding: 20px;
+  height: 100%;
 }
 
 
@@ -848,4 +849,10 @@ body{
 }
 .page-enter, .page-leave-to {
   opacity: 0;
+}
+
+section, .team_members{
+  [class*=col-]{
+    margin-bottom: 30px;
+  }
 }

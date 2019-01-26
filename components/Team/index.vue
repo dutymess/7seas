@@ -26,7 +26,6 @@
 <style lang="scss" scoped>
   // Office
   .panel.team{
-    margin-bottom: 30px;
     text-align: center;
     background: #fafafa;
     padding: 0;
@@ -64,6 +63,7 @@
       padding: 25px 30px;
       line-height: 20px;
       text-align: left;
+      margin-bottom: 0;
     }
   }
 </style>

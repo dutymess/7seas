@@ -33,7 +33,6 @@
 <style lang="scss" scoped>
   // Service
   .panel.service{
-    margin-bottom: 30px;
     text-align: center;
 
     img{

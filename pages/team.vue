@@ -7,7 +7,7 @@
       <img src="@/assets/images/slide.jpg" class="bg">
     </div>
 
-    <div class="content">
+    <div class="content team_members">
 
       <div class="container">
 
