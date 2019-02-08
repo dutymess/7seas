@@ -159,6 +159,10 @@
     z-index: 100;
     overflow: hidden;
 
+    @media (max-width: 767px) {
+      margin-top: 0;
+    }
+
     img.slide{
       width: 100%;
       height: 100%;

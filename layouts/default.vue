@@ -99,6 +99,11 @@
     @media (max-width: 767px) {
       padding-top: 30px;
 
+      a#logo{
+        width: 100%;
+        text-align: center;
+      }
+
       .container{
         flex-direction: column;
         height: auto;
@@ -247,6 +252,11 @@
     top: 20px;
     right: 20px;
     z-index: 6000;
+    display: none;
+
+    @media (max-width: 767px) {
+      display: inline-block;
+    }
 
     span{
       display: block;
