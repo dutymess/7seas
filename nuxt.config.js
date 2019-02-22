@@ -45,6 +45,10 @@ module.exports = {
   modules: [
   ],
 
+  generate: {
+    dir: 'docs'
+  },
+
   /*
   ** Build configuration
   */
