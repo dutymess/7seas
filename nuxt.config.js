@@ -49,6 +49,10 @@ module.exports = {
     dir: 'docs'
   },
 
+  router: {
+    base: './'
+  },
+
   /*
   ** Build configuration
   */
