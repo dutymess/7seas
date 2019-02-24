@@ -94,7 +94,7 @@
     .desc{
       font-family: 'IBM Plex Sans', sans-serif;
       font-weight: bold;
-      font-size: 14px;
+      font-size: 16px;
       color: #ffffff;
     }
 
