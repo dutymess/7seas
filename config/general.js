@@ -4,7 +4,7 @@
 export default {
 
   // Header title
-  header_title: 'Average adjusters - Marine surveyors - Claims and recovery agents <br> Transport lawyers - Marine consultants and brokers',
+  header_title: 'Average Adjusters - Marine surveyors - Claims and recovery agents <br> Marine consultants and brokers',
 
   // Copyright
   copyright: 'All rights reserved. 2019',
@@ -50,8 +50,8 @@ export default {
       ]
     },
     {
-      title: 'Indonesia',
-      to: '/indonesia',
+      title: 'Contact',
+      to: '/contact',
     },
     {
       title: 'Terms and Conditions',

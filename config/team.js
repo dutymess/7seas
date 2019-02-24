@@ -6,29 +6,14 @@ export default {
   // Main
   main: [
     {
-      name: 'Abed Tahiri',
-      position: 'Average Adjuster - Director',
-      desc: 'Abed is the general manager of our Casablanca office, he has over 35 years of experience in the handling of marine claims and is a member of the Association Mondiale de Dispacheurs (AMD) and also a known average adjuster in Morocco. Abed speaks French, Arabic and English.',
+      name: 'Capt. Hasmet OZ',
+      position: 'Master Mariner - Average Adjuster',
+      desc: 'Capt. OZ spent over 10 years at sea prior to joining an Istanbul based company of surveyors and adjusters where he managed a team of over 60 persons. In 2012 Capt. OZ joined Seven Seas & Co and has been accepted as a full member of the International Association of Average Adjusters in 2013. The office in Istanbul with both Capt. Oz and Capt. Dekeukelaere handle all hull and machinery, loss of hire and consultancy claims work for shipowners. Seven Seas & Co also proud itself of being the first fully Turkish manned average adjusting office',
     },
     {
       name: 'Marc Dekeukelaere',
       position: 'LL.M. MIIMS Sworn Average Adjuster - Managing Director',
       desc: 'Marc holds a master degree of Maritime Law and is a Deck Officer (STCW II/2 unlimited). A practicing member of the International, American, French and Belgian Associations of Average Adjusters, he speaks French, English, Dutch, Portuguese and as a Director handles all matters within the company. He is mostly active in condition surveys on sea going vessels and general and particular average adjusting as well as on major cargo claims. Marc holds a certificate from the Institute of Chartered Shipbrokers and is a marine insurance broker. He carries out ISM and ISPS audits as a lead auditor and is a nautical inspector for flag administrations.',
-    },
-    {
-      name: 'Andreas Nicolaou',
-      position: 'Bsc. Eng. Msc. Mar. Tech C. Eng. - Director',
-      desc: 'A Marine Engineer he is the head of the marine surveying department. Andreas worked for an insurance broker and several ship managers in both technical and insurance positions. He is a Classification Society surveyor and an expert in ship registrations, ISM and ISPS audits and certifications and regulatory issues relating to shipping.',
-    },
-    {
-      name: 'Andreas Philippou',
-      position: 'Mar. Eng. - Director',
-      desc: 'He is an engineer officer and a Classification Society surveyor. An expert in ship registrations with expertise in hull and machinery surveys having attended over 3500 vessels.',
-    },
-    {
-      name: 'Capt. Hasmet OZ',
-      position: 'Master Mariner - Average Adjuster',
-      desc: 'Capt. OZ spent over 10 years at sea prior to joining an Istanbul based company of surveyors and adjusters where he managed a team of over 60 persons. In 2012 Capt. OZ joined Seven Seas & Co and has been accepted as a full member of the International Association of Average Adjusters in 2013. The office in Istanbul with both Capt. Oz and Capt. Dekeukelaere handle all hull and machinery, loss of hire and consultancy claims work for shipowners. Seven Seas & Co also proud itself of being the first fully Turkish manned average adjusting office',
     },
     {
       name: 'António Marques',
@@ -39,6 +24,21 @@ export default {
       name: 'Tharcisse Nkiba',
       position: 'MSc. Sworn Marine Surveyor - Director',
       desc: 'Tharcisse is managing the office in Matadi. He holds a Master Degree and is fluent in English, French and local dialects. Tharcisse is at the service of our customers in all the Democratic Republic of the Congo. He holds a Technical Cargo Surveyor diploma and was sworn in by the Matadi Court as official marine and cargo surveyor. He heads a team of about 10 persons.',
+    },
+    {
+      name: 'Abed Tahiri',
+      position: 'Average Adjuster - Director',
+      desc: 'Abed is the general manager of our Casablanca office, he has over 35 years of experience in the handling of marine claims and is a member of the Association Mondiale de Dispacheurs (AMD) and also a known average adjuster in Morocco. Abed speaks French, Arabic and English.',
+    },
+    {
+      name: 'Andreas Nicolaou',
+      position: 'Bsc. Eng. Msc. Mar. Tech C. Eng. - Director',
+      desc: 'A Marine Engineer he is the head of the marine surveying department. Andreas worked for an insurance broker and several ship managers in both technical and insurance positions. He is a Classification Society surveyor and an expert in ship registrations, ISM and ISPS audits and certifications and regulatory issues relating to shipping.',
+    },
+    {
+      name: 'Andreas Philippou',
+      position: 'Mar. Eng. - Director',
+      desc: 'He is an engineer officer and a Classification Society surveyor. An expert in ship registrations with expertise in hull and machinery surveys having attended over 3500 vessels.',
     },
     {
       name: 'Janusz Fedorowicz',

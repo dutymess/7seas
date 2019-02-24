@@ -39,7 +39,6 @@
               <li>Alternative dispute resolution</li>
               <li>Arbitration proceedings</li>
               <li>Maritime fraud investigations</li>
-              <li>Theft and non-delivery of cargo</li>
             </ul>
 
           </div>
