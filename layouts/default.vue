@@ -43,6 +43,9 @@
       <a href="#" id="logo-footer">
         <img src="@/assets/images/logo-footer.svg" width="250">
       </a>
+      <br>
+      <a href="http://7seas.be" id="site-footer">www.7seas.be</a>
+      <br>
       <div class="copyright" v-html="Configs.General.copyright"></div>
     </footer>
 
@@ -91,7 +94,6 @@
     .desc{
       font-family: 'IBM Plex Sans', sans-serif;
       font-weight: bold;
-      font-style: italic;
       font-size: 14px;
       color: #ffffff;
     }
@@ -300,10 +302,21 @@
     border-top: 1px solid #DEDEDE;
 
     .copyright{
-      margin-top: 70px;
+      margin-top: 30px;
       font-family: 'IBM Plex Sans', sans-serif;
       font-size: 12px;
       color: #aaaaaa;
     }
+    #site-footer{
+      display: inline-block;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #147b89;
+
+      &:hover{
+        color: #777;
+      }
+    }
+
   }
 </style>
