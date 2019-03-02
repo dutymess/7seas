@@ -1,12 +1,63 @@
 const pkg = require('./package')
 
-console.log(process.env.DEPLOY_ENV);
-
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
-    base: '/7seas/'
+    base: '/7seas/',
+    scrollBehavior: async (to, from, savedPosition) => {
+      if (savedPosition) {
+        return savedPosition
+      }
+
+      const findEl = async (hash, x) => {
+        return document.querySelector(hash) ||
+          new Promise((resolve, reject) => {
+            if (x > 50) {
+              return resolve()
+            }
+            setTimeout(() => { resolve(findEl(hash, ++x || 1)) }, 100)
+          })
+      }
+
+      if (to.hash) {
+        let el = await findEl(to.hash)
+        if ('scrollBehavior' in document.documentElement.style) {
+          return window.scrollTo({ top: el.offsetTop, behavior: 'smooth' })
+        } else {
+          return window.scrollTo(0, el.offsetTop)
+        }
+      }
+
+      return { x: 0, y: 0 }
+    }
   }
-} : {};
+} : {
+  scrollBehavior: async (to, from, savedPosition) => {
+    if (savedPosition) {
+      return savedPosition
+    }
+
+    const findEl = async (hash, x) => {
+      return document.querySelector(hash) ||
+        new Promise((resolve, reject) => {
+          if (x > 50) {
+            return resolve()
+          }
+          setTimeout(() => { resolve(findEl(hash, ++x || 1)) }, 100)
+        })
+    }
+
+    if (to.hash) {
+      let el = await findEl(to.hash)
+      if ('scrollBehavior' in document.documentElement.style) {
+        return window.scrollTo({ top: el.offsetTop, behavior: 'smooth' })
+      } else {
+        return window.scrollTo(0, el.offsetTop)
+      }
+    }
+
+    return { x: 0, y: 0 }
+  }
+};
 
 module.exports = {
   mode: 'universal',
@@ -69,36 +120,4 @@ module.exports = {
       
     }
   },
-
-  router: {
-
-    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/7seas/' : '/',
-
-    scrollBehavior: async (to, from, savedPosition) => {
-      if (savedPosition) {
-        return savedPosition
-      }
-
-      const findEl = async (hash, x) => {
-        return document.querySelector(hash) ||
-          new Promise((resolve, reject) => {
-            if (x > 50) {
-              return resolve()
-            }
-            setTimeout(() => { resolve(findEl(hash, ++x || 1)) }, 100)
-          })
-      }
-
-      if (to.hash) {
-        let el = await findEl(to.hash)
-        if ('scrollBehavior' in document.documentElement.style) {
-          return window.scrollTo({ top: el.offsetTop, behavior: 'smooth' })
-        } else {
-          return window.scrollTo(0, el.offsetTop)
-        }
-      }
-
-      return { x: 0, y: 0 }
-    }
-  }
 }
