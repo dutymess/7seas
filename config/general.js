@@ -51,7 +51,7 @@ export default {
     },
     {
       title: 'Contact',
-      to: '/contact',
+      to: '/#offices',
     },
     {
       title: 'Terms and Conditions',
