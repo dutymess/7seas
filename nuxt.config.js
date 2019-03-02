@@ -1,5 +1,7 @@
 const pkg = require('./package')
 
+console.log(process.env.DEPLOY_ENV);
+
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
     base: '/7seas/'
@@ -69,6 +71,9 @@ module.exports = {
   },
 
   router: {
+
+    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/7seas/' : '/',
+
     scrollBehavior: async (to, from, savedPosition) => {
       if (savedPosition) {
         return savedPosition
