@@ -37,6 +37,21 @@
 
       <!-- Main offices -->
       <div class="container">
+
+        <div class="panel contact">
+          <p>Available 24 hours a day and 365 days a year:</p>
+          <div class="row">
+            <div class="col">
+              <span>24/7 tel:</span>
+              <h4 style="margin-top: 8px;">+32 495 77 97 17</h4>
+            </div>
+            <div class="col">
+              <span>Email:</span>
+              <h4 style="margin-top: 8px;"><a href="mailto:info@7seas.bg">info@7seas.bg</a></h4>
+            </div>
+          </div>
+        </div>
+
         <div class="row" v-for="i in Math.ceil(Configs.Offices.main.length / 3)">
           <div class="col-4" v-for="office in Configs.Offices.main.slice((i - 1) * 3, i * 3)">
             <office :img="office.img"
@@ -297,6 +312,24 @@
       font-size: 14px;
       margin: 0 0 30px;
       color: #ffffff;
+    }
+  }
+
+  .panel.contact{
+    margin-bottom: 30px;
+    text-align: center;
+
+    span, p{
+      color: #747474;
+    }
+    p{
+      font-weight: bold;
+    }
+    h4{
+      color: #147b89;
+    }
+    a{
+      color: #147b89;
     }
   }
 </style>
