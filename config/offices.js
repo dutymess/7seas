@@ -46,8 +46,9 @@ export default {
     {
       img: 'congo',
       title: 'Matadi, D.R. of the Congo',
-      desc: 'avenue de la Fontaine, 2155<br>' +
-        'Ville Basse, Commune de Matadi<br>' +
+      desc: 'Avenue Kinkanda, 3<br>' +
+        'Port Entrance - Ville Basse, Matadi<br>' +
+        'Democratic Republic of the Congo<br>' +
         '<br>' +
         'Tel.: + 32 495 77 97 17 <br>' +
         'Tel.: +243 998 511 316 <br>' +

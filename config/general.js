@@ -2,16 +2,16 @@
 - General configs
 -----------------------------------------------------------------*/
 export default {
-
+  
   // Header title
-  header_title: 'Average Adjusters - Marine surveyors - Claims and recovery agents <br> Marine consultants and brokers',
-
+  header_title: 'Average Adjusters - Marine Surveyors - Claims and Recovery Agents <br>Marine Consultants and Brokers',
+  
   // Copyright
   copyright: 'All rights reserved. 2019',
-
+  
   // Menu
   menu: [
-
+    
     {
       title: 'Home',
       to: '/',
@@ -57,7 +57,7 @@ export default {
       title: 'Terms and Conditions',
       to: '/terms-and-conditions',
     },
-
+  
   ]
-
+  
 };
