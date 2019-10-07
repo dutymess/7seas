@@ -29,6 +29,17 @@
 
     </section>
 
+    <!-- Services -->
+    <section id="lloyds" class="small">
+
+      <div class="ta-c">
+        <part-title title-second="Lloyd's Agent in D.R. of the Congo, Angola and Morocco">
+          <img src="@/assets/images/lloyds.jpg" width="160" alt="Lloyd's Agent in D.R. of the Congo, Angola and Morocco">
+        </part-title>
+      </div>
+
+    </section>
+
     <!-- Offices -->
     <section id="offices">
 
@@ -205,6 +216,10 @@
     position: relative;
     overflow: hidden;
     padding-bottom: 60px;
+
+    &.small{
+      min-height: 0;
+    }
 
     .bg-img{
       position: absolute;

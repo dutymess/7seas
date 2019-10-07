@@ -84,6 +84,7 @@ export default {
         '150 Fenchurch Street, 2nd Floor<br>' +
         'London EC3M 6BB - United Kingdom<br>' +
         'Tel.: +44 (0)207 4883 055',
+      email: 'info@7seas.bg',
     },
     {
       img: 'russia',

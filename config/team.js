@@ -88,6 +88,10 @@ export default {
       position: 'M.N.Sc. LL.M.',
       desc: 'A Master in Nautical Sciences, Gilles also obtained a Master degree of Maritime Law from the University of Brussels. In 1995 after his training period in Belgium, France and on the "Jeanne d\'Arc" he returned to his home country, Ivory Coast. Gilles is in charge of the office in Abidjan.',
     },
+    {
+      name: 'Taha M. Kamkar',
+      desc: 'After his time at sea, dealing with large engines on various types of vessels Eng. Kamkar joined our team as a specialist on marine surveys and as mechanical expert.  He attends surveys and advises on cause and extent of machinery damage and revises repair accounts. He also acts as consultant for marine Underwriters on the merits of marine hull and machinery claims.',
+    },
   ],
 
   // Others

@@ -25,13 +25,13 @@
             <p>Any dispute shall be referred to Arbitration and Appeal before the competent Cypriot Courts under the laws of Cyprus.</p>
             <p>The overall limit of liability in case same would be retained cannot exceed the level of fees received by the company. The client and we agree that this maximum amount is fair in view of the risks we assume in the performance of our services compared to the fees we will receive.</p>
             <p>If you do not read or understand English it is your responsibility to advise us or to refrain from instructing us. You can reach us at +357 25 818 020 or at
-              <a href="mailto:ho@7seas.be">ho@7seas.be</a> for any advice you may need on the above.</p>
+              <a href="mailto:info@7seas.bg">ho@7seas.be</a> for any advice you may need on the above.</p>
 
             <p></p>
             <p>
               Seven Seas & Co Ltd. <br>
               Directors <br>
-              Issued in Limassol on 30<sup>th</sup> June 2009 <br>
+              Issued in Limassol on 30<sup>th</sup> September 2019 <br>
             </p>
 
           </div>

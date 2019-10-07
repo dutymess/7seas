@@ -1,6 +1,7 @@
 <template>
   <div class="part-title">
-    <img :src="imgUrl" :alt="`${titleFirst} ${titleSecond}`" v-if="icon">
+    <slot />
+    <img :src="imgUrl" :alt="`${titleFirst} ${titleSecond}`" v-if="icon" class="icon">
     <div class="title">
       <span class="first" v-if="titleFirst">{{ titleFirst }}</span>
       <span class="second" v-if="titleSecond">{{ titleSecond }}</span>
@@ -39,9 +40,11 @@
   text-align: center;
 
   img{
+    margin-bottom: 20px;
+  }
+  img.icon{
     width: 64px;
     height: auto;
-    margin-bottom: 20px;
     vertical-align: middle;
   }
   .title{

@@ -17,8 +17,8 @@ export default {
       to: '/',
     },
     {
-      title: 'Hull',
-      to: '/hull',
+      title: 'HULL & MACHINERY',
+      to: '/hull-machinery',
     },
     {
       title: 'Cargo',
