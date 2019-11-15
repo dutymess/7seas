@@ -46,9 +46,9 @@ export default {
       desc: 'Past Chairman of the International Association of Average Adjusters. He has over 50 years of experience and runs a company associated to ours.',
     },
     {
-      name: 'Nicolas. Breithoff',
+      name: 'Nicolas. Breihoff',
       position: 'Senior surveyor',
-      desc: 'After having spent many years at sea, Mr. Breithof joined our team as a specialist on marine and non-marine surveys. He is fluent in French, English, German and Dutch and carries out surveys all around Europe. He is available to attend at short notice in any country where clients may need our services for both surveys and investigations.',
+      desc: 'After having spent many years at sea, Mr. Breihoff joined our team as a specialist on marine and non-marine surveys. He is fluent in French, English, German and Dutch and carries out surveys all around Europe. He is available to attend at short notice in any country where clients may need our services for both surveys and investigations.',
     },
     {
       name: 'Olivier Dalamel de Bournet',
@@ -87,6 +87,10 @@ export default {
       name: 'Capt Gilles Essigan',
       position: 'M.N.Sc. LL.M.',
       desc: 'A Master in Nautical Sciences, Gilles also obtained a Master degree of Maritime Law from the University of Brussels. In 1995 after his training period in Belgium, France and on the "Jeanne d\'Arc" he returned to his home country, Ivory Coast. Gilles is in charge of the office in Abidjan.',
+    },
+    {
+      name: 'Muthu Jagannath',
+      desc: 'Based at Singapore, NAU act as Claims Correspondents, Consultants & Adjusters to assist clients in their Hull, P&I and Transport Liability (Freight Forwarder/NVOCC/Ports & Terminals/Marine Professional Indemnity) Claims. NAU is regularly instructed by both Insurers and Insureds to deal with various claims in the Asian region.',
     },
     {
       name: 'Taha M. Kamkar',

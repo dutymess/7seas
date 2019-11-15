@@ -107,5 +107,14 @@ export default {
         'Mobile: 087887637345<br>',
       email: 'indonesia@7seas.bg',
     },
+    {
+      img: 'singapore',
+      title: 'Singapore',
+      desc: 'Seven Seas Co c/o Nau Pte Ltd<br>' +
+        '6 Raffles Quay <br>' +
+        '15-00, Singapore 048580<br>' +
+        'Tel.: +65 67 633 239<br>',
+      email: 'singapore@7seas.bg',
+    },
   ],
 };
